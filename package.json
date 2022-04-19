@@ -39,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "blog frontend using react",
+  "main": "index.tsx",
+  "repository": "https://github.com/hsuyeung/blog-react.git",
+  "author": "hsuyeung <hsuyeung.com@gmail.com>",
+  "license": "MIT"
 }
