@@ -5,6 +5,13 @@ module.exports = {
     'alloy/react',
     'alloy/typescript',
   ],
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    'react',
+    '@typescript-eslint/eslint-plugin',
+    'prettier',
+    'react-hooks',
+  ],
   env: {
     // 你的环境变量（包含多个预定义的全局变量）
     //
@@ -21,5 +28,8 @@ module.exports = {
   },
   rules: {
     // 自定义你的规则
+    'prettier/prettier': 'error',
+    'react-hooks/rules-of-hooks': 'error',  // 检查 Hook 的规则
+    'react-hooks/exhaustive-deps': 'warn'   // 检查 effect 的依赖
   },
 };
