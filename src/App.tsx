@@ -1,11 +1,14 @@
 import React from 'react';
+import './app.less';
+import './App-real.less';
+import Container from './Container';
+import Footer from './Footer';
 
-function App(props: any) {
+export default function App() {
   return (
-    <div className='App'>
-      <p>I am {props.name}</p>
-    </div>
+    <>
+      <Container />
+      <Footer />
+    </>
   );
 }
-
-export default App;
