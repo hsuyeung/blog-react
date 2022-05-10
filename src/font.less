@@ -1,0 +1,33 @@
+// 使用 :global 将样式声明包裹起来，可以避免类名被编译为哈希字符串导致样式不生效
+:global {
+  @font-face {
+    font-family: 'icomoon';
+    src: url('assets/fonts/icomoon.eot?r1pplh');
+    src: url('assets/fonts/icomoon.eot?r1pplh#iefix') format('embedded-opentype'),
+    url('assets/fonts/icomoon.ttf?r1pplh') format('truetype'), url('assets/fonts/icomoon.woff?r1pplh') format('woff'),
+    url('assets/fonts/icomoon.svg?r1pplh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^='icon-'],
+  [class*=' icon-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon', 'Microsoft YaHei' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-mail:before {
+    content: '\e900';
+  }
+}
