@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Home from './Home';
 import styled from '@emotion/styled';
+import { StyledDotDivider } from './customStyledComponent';
 
 export default function HeaderNav() {
   return (
@@ -14,7 +15,7 @@ export default function HeaderNav() {
         <a href='/posts' className='nav-item'>
           所有文章
         </a>
-        <span className='dot-divider'> | </span>
+        <StyledDotDivider> | </StyledDotDivider>
         <a href='/about' className='nav-item'>
           关于
         </a>
