@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
-import { StyledDotDivider } from './customStyledComponent';
+import { ClearBoth, StyledDotDivider } from './customStyledComponent';
 
-export default function ContainerFooter() {
+export default function BodyFooter() {
   return (
-    <StyledContainerFooter>
+    <StyledBodyFooter>
       <LeftDiv>
         <Link to='/'>
           <img src='/avatar.jpg' alt='avatar' className='avatar' />
@@ -21,12 +21,12 @@ export default function ContainerFooter() {
           <span className='icon-rss1'> 赞赏</span>
         </Link>
       </RightDiv>
-      <div className='clear' />
-    </StyledContainerFooter>
+      <ClearBoth />
+    </StyledBodyFooter>
   );
 }
 
-const StyledContainerFooter = styled.div`
+const StyledBodyFooter = styled.div`
   display: block;
   padding-top: 1.4rem;
   border-top: 0.1rem solid rgba(154, 128, 92, 0.2);
@@ -34,6 +34,9 @@ const StyledContainerFooter = styled.div`
   max-width: 100%;
   margin-bottom: -3.2rem;
   font-size: 1.5rem;
+  @media (max-device-width: 700px) {
+    display: none;
+  }
 `;
 
 const LeftDiv = styled.div`

@@ -1,10 +1,7 @@
-import React from 'react';
-import NewestArticleList from './NewestArticleList';
-import styled from '@emotion/styled';
 import HeaderNav from './HeaderNav';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <HeaderNav />
@@ -13,15 +10,10 @@ export default function Home() {
           <img src='/bear.jpg' data-src='/bear.jpg' alt='北极熊' className='post-img lazyload medium-zoom-image' />
         </div>
         <div className='figcaption' />
-        <NewestArticleList />
+        <h1>介绍信息</h1>
+        <h1>留言组件</h1>
+        <h1>留言列表</h1>
       </div>
     </>
   );
 }
-
-export const StyledHeaderLink = styled(Link)`
-  &:link,
-  &:visited {
-    color: #4f321c;
-  }
-`;

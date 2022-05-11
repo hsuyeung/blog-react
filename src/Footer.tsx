@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledDotDivider } from './customStyledComponent';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -7,9 +8,9 @@ export default function Footer() {
       <div className='copyright'>
         © 2019 ~ 2022
         <StyledDotDivider>·</StyledDotDivider>
-        <a href='/'>HsuYeung</a>
+        <Link to='/'>HsuYeung</Link>
         <StyledDotDivider>·</StyledDotDivider>
-        <a href='/about'>关于本站</a>
+        <Link to='/about'>关于本站</Link>
       </div>
     </footer>
   );

@@ -2,13 +2,13 @@ import React from 'react';
 import './app.less';
 import './App-real.less';
 import './font.less';
-import Container from './Container';
+import Body from './Body';
 import Footer from './Footer';
 
 export default function App() {
   return (
     <>
-      <Container />
+      <Body />
       <Footer />
     </>
   );

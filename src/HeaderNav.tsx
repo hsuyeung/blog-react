@@ -1,28 +1,40 @@
-import { Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 import React from 'react';
-import Home from './Home';
+import Home, { StyledHeaderLink } from './Home';
 import styled from '@emotion/styled';
-import { StyledDotDivider } from './customStyledComponent';
+import { ClearBoth, StyledDotDivider } from './customStyledComponent';
 
 export default function HeaderNav() {
   return (
-    <div>
-      <span>XXX的个人博客</span>
-      <StyledNavMenu>
-        <Routes>
-          <Route path='about' element={<Home />} />
-        </Routes>
-        <a href='/posts' className='nav-item'>
-          所有文章
-        </a>
-        <StyledDotDivider> | </StyledDotDivider>
-        <a href='/about' className='nav-item'>
-          关于
-        </a>
-      </StyledNavMenu>
-    </div>
+    <StyledHeaderNav>
+      <h1>
+        <StyledHeaderLink to='/'>Hsu Yeung</StyledHeaderLink>
+      </h1>
+      <div>
+        <span>日常、技术、生活</span>
+        <StyledNavMenu>
+          <Routes>
+            <Route path='about' element={<Home />} />
+          </Routes>
+          <Link to='/archive' className='nav-item'>
+            归档
+          </Link>
+          <StyledDotDivider> | </StyledDotDivider>
+          <Link to='/about' className='nav-item'>
+            关于
+          </Link>
+        </StyledNavMenu>
+      </div>
+      <ClearBoth />
+    </StyledHeaderNav>
   );
 }
+
+const StyledHeaderNav = styled.div`
+  @media (min-device-width: 1281px) {
+    margin-bottom: 30px;
+  }
+`;
 
 const StyledNavMenu = styled.span`
   font-size: 15px;
