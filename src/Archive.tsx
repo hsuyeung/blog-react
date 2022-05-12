@@ -1,5 +1,5 @@
 import HeaderNav from './HeaderNav';
-import { ClearBoth, StyledDotDivider } from './customStyledComponent';
+import { ClearBoth, StyledDotDivider } from './components';
 import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 

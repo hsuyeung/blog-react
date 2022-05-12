@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
-import { ClearBoth, StyledDotDivider } from './customStyledComponent';
+import { ClearBoth, StyledDotDivider } from './components';
 
 export default function BodyFooter() {
   return (

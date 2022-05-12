@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledDotDivider } from './customStyledComponent';
+import { StyledDotDivider } from './components';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {

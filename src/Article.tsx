@@ -1,10 +1,7 @@
-import { ClearBoth } from './customStyledComponent';
+import { useParams } from 'react-router-dom';
 
-interface ArticleProps {
-  id: number | string | undefined;
-}
-
-export default function Article(props: ArticleProps) {
+export default function Article() {
+  const { id: articleId } = useParams();
   return (
     <>
       <article>

@@ -1,23 +1,12 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import Home from './Home';
 import BodyFooter from './BodyFooter';
-import { Route, Routes } from 'react-router-dom';
-import About from './About';
-import NotFound from './NotFound';
-import Archive from './Archive';
-import Article from './Article';
+import Router from './routes';
 
 export default function Body() {
   return (
     <StyledBody>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/archive' element={<Archive />} />
-        <Route path='/article/:id' element={<Article id={1} />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
+      <Router />
       <BodyFooter />
     </StyledBody>
   );

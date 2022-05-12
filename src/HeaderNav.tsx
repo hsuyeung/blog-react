@@ -2,7 +2,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Home, { StyledHeaderLink } from './Home';
 import styled from '@emotion/styled';
-import { ClearBoth, StyledDotDivider } from './customStyledComponent';
+import { ClearBoth, StyledDotDivider } from './components';
 
 export default function HeaderNav() {
   return (
