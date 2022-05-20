@@ -1,6 +1,5 @@
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React from 'react';
-import Home, { StyledHeaderLink } from './Home';
 import styled from '@emotion/styled';
 import { ClearBoth, StyledDotDivider } from './components';
 
@@ -13,9 +12,6 @@ export default function HeaderNav() {
       <div>
         <span>日常、技术、生活</span>
         <StyledNavMenu>
-          <Routes>
-            <Route path='about' element={<Home />} />
-          </Routes>
           <Link to='/archive' className='nav-item'>
             归档
           </Link>
@@ -32,16 +28,23 @@ export default function HeaderNav() {
 
 const StyledHeaderNav = styled.div`
   @media (min-device-width: 1281px) {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
 `;
 
 const StyledNavMenu = styled.span`
-  font-size: 15px;
+  font-size: 1.5rem;
   float: right;
   @media (max-device-width: 700px) {
     display: block;
     float: none;
-    margin-top: 5px;
+    margin-top: 0.5rem;
+  }
+`;
+
+const StyledHeaderLink = styled(Link)`
+  &:link,
+  &:visited {
+    color: #4f321c;
   }
 `;

@@ -1,13 +1,13 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export default function Article() {
   const { id: articleId } = useParams();
   return (
     <>
       <article>
-        <a href='/' className='back-home'>
+        <Link to='/' className='back-home'>
           ⟵ Hsu Yeung 的个人博客
-        </a>
+        </Link>
 
         <div className='post-title-container'>
           <h1 className='post-title'>我的命令行开发环境 ❤️</h1>

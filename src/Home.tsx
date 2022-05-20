@@ -1,8 +1,6 @@
 import React from 'react';
 import NewestArticleList from './NewestArticleList';
-import styled from '@emotion/styled';
 import HeaderNav from './HeaderNav';
-import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -18,10 +16,3 @@ export default function Home() {
     </>
   );
 }
-
-export const StyledHeaderLink = styled(Link)`
-  &:link,
-  &:visited {
-    color: #4f321c;
-  }
-`;
