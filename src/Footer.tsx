@@ -12,6 +12,11 @@ export default function Footer() {
         <StyledDotDivider>·</StyledDotDivider>
         <Link to='/about'>关于本站</Link>
       </div>
+      <div>
+        <a href='https://beian.miit.gov.cn/' target='_blank'>
+          蜀ICP备2022013775号-1
+        </a>
+      </div>
     </footer>
   );
 }
