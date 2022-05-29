@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
+import React from 'react';
 
 export default function Article() {
   const { id: articleId } = useParams();
@@ -36,14 +37,14 @@ export default function Article() {
         </div>
         <div className='post-body'>
           <p>常言道，工欲善其事、必先利其器，熟练一套高效且趁手的工具，对开发工作的重要性不言而喻。</p>
-
+          <img src='/bear.jpg' alt='北极熊' />
           <p>
             <span className='marked'>本文分享我的命令行开发环境，文章较长，配图较多</span>，
             其中几处详细内容，已将其折叠起来，读者可视兴趣展开阅读。
           </p>
 
           <p>命令行工具非常多，称得上神器的，提炼为以下四个：</p>
-
+          <img src='/bear.jpg' alt='北极熊' />
           <ul>
             <li>
               <a href='#终端程序--alacritty'>终端程序 - Alacritty</a>

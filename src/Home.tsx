@@ -8,7 +8,7 @@ export default function Home() {
       <HeaderNav />
       <div className='body'>
         <div className='figure'>
-          <img src='/bear.jpg' data-src='/bear.jpg' alt='北极熊' className='post-img lazyload medium-zoom-image' />
+          <img src='/bear.jpg' alt='北极熊' />
         </div>
         <div className='figcaption' />
         <NewestArticleList />
